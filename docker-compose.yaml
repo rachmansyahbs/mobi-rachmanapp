@@ -1,0 +1,13 @@
+version: '3.8'
+networks:
+  rachmanbr1:
+services:
+  rachmanapp001:
+    image: rachmanciapp:v1
+    build: .
+    container_name: rachmancic1
+    ports:
+      - "1429:80"
+    restart: always
+    network:
+      - rachmanbr1
