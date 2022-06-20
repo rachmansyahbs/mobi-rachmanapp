@@ -9,5 +9,5 @@ services:
     ports:
       - "1429:80"
     restart: always
-    network:
+    networks:
       - rachmanbr1
